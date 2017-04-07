@@ -1,0 +1,53 @@
+body {
+  background: black;
+  margin: 1em;
+  padding: 0;
+}
+
+body.is-showing-image {
+  overflow: hidden;
+}
+
+.image-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.image-list li {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+
+.image-list img {
+  width: 100%;
+}
+
+.image-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  display: none;
+  width: 100vw;
+  min-height: 100vh;
+  background: white;
+}
+
+.image-view img {
+  width: 100vw;
+}
+
+.is-showing-image .image-view {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
